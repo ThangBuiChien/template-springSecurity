@@ -1,8 +1,8 @@
-package com.laurentiuspilca.ssia.security.service;
+package com.laurentiuspilca.ssia.security.user;
 
 import com.laurentiuspilca.ssia.entity.Users;
 import com.laurentiuspilca.ssia.repository.UsersRepository;
-import com.laurentiuspilca.ssia.security.SecurityUser;
+import com.laurentiuspilca.ssia.security.user.SecurityUser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,4 +1,4 @@
-package com.laurentiuspilca.ssia.dto.auth;
+package com.laurentiuspilca.ssia.security.auth;
 
 import lombok.Data;
 

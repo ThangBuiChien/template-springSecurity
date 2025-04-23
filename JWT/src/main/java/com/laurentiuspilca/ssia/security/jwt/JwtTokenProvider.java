@@ -1,6 +1,6 @@
 package com.laurentiuspilca.ssia.security.jwt;
 
-import com.laurentiuspilca.ssia.security.SecurityUser;
+import com.laurentiuspilca.ssia.security.user.SecurityUser;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;

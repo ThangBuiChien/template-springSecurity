@@ -1,6 +1,5 @@
 package com.laurentiuspilca.ssia.security.jwt;
 
-import com.laurentiuspilca.ssia.security.service.CustomUserDetailService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;

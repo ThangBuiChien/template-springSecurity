@@ -1,4 +1,4 @@
-package com.laurentiuspilca.ssia.security;
+package com.laurentiuspilca.ssia.security.user;
 
 import com.laurentiuspilca.ssia.entity.Users;
 import org.springframework.security.core.GrantedAuthority;

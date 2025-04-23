@@ -1,7 +1,5 @@
-package com.laurentiuspilca.ssia.controllers;
+package com.laurentiuspilca.ssia.security.auth;
 
-import com.laurentiuspilca.ssia.dto.auth.JwtAuthResponse;
-import com.laurentiuspilca.ssia.dto.auth.LoginRequest;
 import com.laurentiuspilca.ssia.security.jwt.JwtTokenProvider;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
