@@ -23,6 +23,9 @@ public class Users {
     private String userName;
     private String password;
 
+    private String email;
+    private boolean isVerified = false;
+
     @ManyToMany(fetch = FetchType.EAGER) // Load roles with user
     @JoinTable(
             name = "user_roles",

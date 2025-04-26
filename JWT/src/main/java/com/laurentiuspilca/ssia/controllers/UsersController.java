@@ -22,6 +22,13 @@ public class UsersController {
         return ResponseEntity.ok(savedUser);
     }
 
+    @GetMapping("/{id}")
+//    @PreAuthorize("#id == authentication.principal.id")
+    public ResponseEntity<Users> getUser(@PathVariable Long id) {
+        Users user = usersRepository.findById(id).orElseThrow(() -> new RuntimeException("User not found"));
+        return ResponseEntity.ok(user);
+    }
+
     @PutMapping("/{id}")
     @PreAuthorize("#id == authentication.principal.id")
     public ResponseEntity<Users> updateUser(@PathVariable Long id, @RequestBody Users user) {
