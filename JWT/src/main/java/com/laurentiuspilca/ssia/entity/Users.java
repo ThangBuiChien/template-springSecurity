@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.Set;
+import java.util.UUID;
 
 @Getter
 @Setter
@@ -33,4 +34,15 @@ public class Users {
             inverseJoinColumns = @JoinColumn(name = "role_id")
     )
     private Set<Roles> roles; // Use Set to avoid duplicate roles
+
+    @Column(name = "refresh_token")
+    private UUID refreshToken;
+
+    public void generateNewRefreshToken() {
+        this.refreshToken = UUID.randomUUID();
+    }
+
+    public void clearRefreshToken() {
+        this.refreshToken = null;
+    }
 }
